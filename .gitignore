@@ -6,3 +6,7 @@
 ._*
 .Spotlight-V100
 .Trashes
+
+# NPM
+node_modules/
+npm-debug.log

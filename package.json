@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@wordpress/eslint-plugin": "^22.17.0"
+  }
+}
