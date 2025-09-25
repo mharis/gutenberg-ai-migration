@@ -3,6 +3,17 @@
         "wp-coding-standards/wpcs": "^3.0",
         "phpcompatibility/phpcompatibility-wp": "*"
     },
+    "autoload": {
+        "psr-4": {
+            "GutenbergAIMigration\\": "includes/"
+        }
+    },
+    "scripts": {
+        "lint": "phpcs -s . --runtime-set testVersion 8.3-",
+        "lint-fix": "phpcbf .",
+        "phpstan": "phpstan analyse --memory-limit=2048M -v",
+        "pre-autoload-dump": "Aws\\Script\\Composer\\Composer::removeUnusedServices"
+    },
     "config": {
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
