@@ -1,5 +1,32 @@
 {
+  "name": "gutenberg-ai-migration",
+  "version": "1.0.0",
+  "description": "A plugin to help migrate content from HTML/Avada/Elementor & etc. to Gutenberg with AI.",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "lint:js": "wp-scripts lint-js",
+    "lint:css": "wp-scripts lint-style"
+  },
+  "prettier": "@wordpress/prettier-config",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.0.1",
+    "@fortawesome/free-solid-svg-icons": "^7.0.1",
+    "@fortawesome/react-fontawesome": "^3.0.2",
+    "@wordpress/components": "^30.4.0",
+    "@wordpress/editor": "^14.31.0",
+    "@wordpress/element": "^6.31.0",
+    "@wordpress/hooks": "^4.31.0",
+    "@wordpress/i18n": "^6.4.0",
+    "@wordpress/icons": "^10.31.0",
+    "@wordpress/plugins": "^7.31.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
   "devDependencies": {
-    "@wordpress/eslint-plugin": "^22.17.0"
+    "@wordpress/eslint-plugin": "^22.17.0",
+    "@wordpress/prettier-config": "^4.31.0",
+    "@wordpress/scripts": "^30.24.0"
   }
 }
